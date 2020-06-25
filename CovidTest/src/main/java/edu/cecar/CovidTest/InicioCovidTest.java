@@ -29,7 +29,7 @@ public class InicioCovidTest extends AppCompatActivity {
 
         //Colocar icono al lado del nombre de la APP
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.icono_covid_paginas);
+        getSupportActionBar().setIcon(R.mipmap.icono_covid_paginas); // probando
 
         //Consigue la direccion MAC desde DeviceListActivity via EXTRA
         address = getIntent().getStringExtra(EXTRA_DEVICE_ADDRESS);//<-<- PARTE A MODIFICAR >->->
