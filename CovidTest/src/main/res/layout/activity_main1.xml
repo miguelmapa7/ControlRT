@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1">
+
+    <Button
+        android:id="@+id/buttonRegistrarPersona3"
+        android:layout_width="199dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:onClick="resgistarPersonas"
+        android:text="@string/botonRegistarPer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTelefono3" />
+
+    <EditText
+        android:id="@+id/editTextTelefono3"
+        android:layout_width="234dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/cajaTextRPerTelefono"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDireccion3" />
+
+    <EditText
+        android:id="@+id/editTextNombre3"
+        android:layout_width="237dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/app_name"
+        android:ems="10"
+        android:hint="@string/cajaTextRPerNombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdentificacion3" />
+
+    <EditText
+        android:id="@+id/editTextDireccion3"
+        android:layout_width="237dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/cajaTextRPerDire"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellido3" />
+
+    <EditText
+        android:id="@+id/editTextApellido3"
+        android:layout_width="238dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/app_name"
+        android:ems="10"
+        android:hint="@string/cajaTextRPerApellido"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre3" />
+
+    <TextView
+        android:id="@+id/textViewResgistraPersona3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/textRPersonas"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextIdentificacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/app_name"
+        android:ems="10"
+        android:hint="@string/textIdentificacion"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResgistraPersona3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

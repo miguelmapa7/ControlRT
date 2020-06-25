@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8F8"
+    tools:context="edu.cecar.CovidTest.Manual">
+
+    <TextView
+        android:id="@+id/textView2Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/textTituloSintomas"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="314dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdentificacion" />
+
+    <EditText
+        android:id="@+id/editTextIdentificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/textIdentificacion"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2Titulo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDGarganta"
+        android:layout_width="156dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/textDolorGaranta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDFatiga"
+        android:layout_width="79dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/textFatiga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxCNasal"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTos" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTos"
+        android:layout_width="63dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="@string/textTos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDGarganta"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/button4Abajo"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/termometro"
+        android:contentDescription="@string/textTemperatura"
+        android:onClick="abajo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDRespirar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCNasal"
+        android:layout_width="156dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/textconNasal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDGarganta" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNinguno"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/textNinguno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxDRespirar"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDFatiga" />
+
+    <TextView
+        android:id="@+id/textTemperatura"
+        android:layout_width="57dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:text="@string/textFiebre"
+        app:layout_constraintBottom_toBottomOf="@+id/button4Abajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toEndOf="@+id/button4Abajo"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNinguno"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3Arriba"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:onClick="resgistarTest"
+        android:text="@string/botonRegistrarTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4Abajo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDRespirar"
+        android:layout_width="178dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/textDRespiratoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCNasal" />
+
+    <ImageButton
+        android:id="@+id/imageButton4Home"
+        android:layout_width="49dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/casa"
+        android:contentDescription="@string/app_name"
+        android:onClick="irNuevaPaginaInicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4Abajo"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

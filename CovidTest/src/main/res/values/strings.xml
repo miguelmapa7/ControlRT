@@ -1,0 +1,41 @@
+<resources>
+    <!-->Datos de la Aplicación<-->
+    <string name="app_name">CovidTest</string>
+
+    <!-->Activity TestSintomas<-->
+    <string name="textTituloSintomas">Test Síntomas</string>
+    <string name="textDolorGaranta">Dolor de Garganta</string>
+    <string name="textconNasal">Congestión Nasal</string>
+    <string name="textTos">Tos</string>
+    <string name="textDRespiratoria">Dificultad Respiratoria</string>
+    <string name="textFatiga">Fatiga</string>
+    <string name="textNinguno">Ninguno</string>
+    <string name="textFiebre">Grados</string>
+    <string name="textIdentificacion">Identificación</string>
+    <string name="textTemperatura">Temperatura</string>
+    <string name="botonRegistrarTest">Registrar Test</string>
+
+    <!-->Activity Manual<-->
+    <string name="botonDeconectar">Desconestar</string>
+    <string name="textDispoViculados">DISPOSITIVOS VINCUALDOS</string>
+    <string name="textVoz">Voz</string>
+    <string name="textTituloControl">¿A dónde va Robert?</string>
+
+    <!-->Activity ResgistroPersonas<-->
+    <string name="botonConsultar">Consultar</string>
+    <string name="botonRegistarPer">Registrar Persona</string>
+    <string name="textConsultar">Consultar Persona</string>
+    <string name="textRPersonas">Persona</string>
+    <string name="cajaTextRPerNombre">Digite Nombre</string>
+    <string name="cajaTextRPerApellido">Digite Apellido</string>
+    <string name="cajaTextRPerDire">Digite Dirección</string>
+    <string name="cajaTextRPerTelefono">Digite Teléfono</string>
+
+
+    <string name="low_storage_error">Las dependecias del detector no se pueden descargar debido a la falta de espacio en el dispositivo</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">El acceso a la cámara es necesario para la detección</string>
+    <string name="no_camera_permission">Esta aplicación no puede funcionar debido a las restricciones con los permisos.  La aplicación se cerrará.</string>
+
+
+</resources>

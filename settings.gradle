@@ -1,0 +1,2 @@
+include ':CovidTest'
+rootProject.name='CovidTest'
